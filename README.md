@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# My Portfolio - Built with MERN Stack. (MongoDB, Express.js, React.js and Node.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- **[Description](#Description)**
+- **[Installation Requirements](#Installation-Requirements)**
+- **[License](#License)**
+- **[Questions](#Questions)**
 
-In the project directory, you can run:
+# Description
+The portfolio website is a clean and minimal site to showcase certain skills and technology used. Built on a MERN stack which utilizes NoSQL using MongoDB to record the information submitted on the Contact Form, Express makes an API call and emails myself upon submission of a contact form, React is the primary framework used for front-end development, built on Node to handle it all. The site follows the MVC design pattern (Model-View-Controller) which is an development architecture style commonly used in software companies. 
 
-### `npm start`
+ ### Deployed Site @ https://jared-seefrieds-portfolio.herokuapp.com/ 
+---
+ ![Jared Seefrieds Portfolio](./client/src/images/front-page.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Installation Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone my portfolio in the command line by entering: git clone https://github.com/jaredseefried/my-portfolio.git
 
-### `npm test`
+2. Install required libraries from entering in the command line: npm i
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create .env file at the root directory and enter your gmail credentials for the following process.env values:
+    - EMAIL=example@gmail.com
+    - PASSWORD=password123
+    * API Route is to GMAIL Host only. Change the SMTP Host in ./routes/api/sendmail.js file. Please read the nodemailer documentation on how to properly user your own mail host. https://nodemailer.com/about/ 
 
-### `npm run build`
+4. Update your .gitignore file to include the .env file
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Start the application by entering in the command line: npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Your Mongo Database will be created on start and can be viewed through the command line and/or a MongoDB Gui such as Robo 3T https://robomongo.org/. (MongoDB must be installed. If Mongo has not been installed, go to https://www.mongodb.com/2)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# License
 
-### `npm run eject`
+MIT
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Have Questions?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## [Github Profile: github.com/jaredseefried](https://github.com/jaredseefried "Title")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please email me at jared.seefried@yahoo.com if you have additional questions.
